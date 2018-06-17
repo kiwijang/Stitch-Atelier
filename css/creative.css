@@ -9,18 +9,17 @@ body {
 }
 
 hr {
-  max-width: 50%;
+  max-width: 30%;
   border-width: 3px;
   border-color: rgba(70, 78, 78, 0.68);
 }
 
 a {
-    
     text-decoration: none;
-  color: #00514a;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  transition: all 0.2s;
+    color: #00514a;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
 }
 
 a:hover {
@@ -120,7 +119,6 @@ img::-moz-selection {
     letter-spacing: 4px;
   font-size: 16px;
   font-weight: 600;
-  text-transform: uppercase;
   color: #212529;
 }
 
@@ -142,15 +140,8 @@ img::-moz-selection {
 
 @media (min-width: 992px) {
   #mainNav {
-    border-color: rgba(144, 255, 245, 0.29);
-    background-color: rgb(27, 54, 52);
-    animation: navv 5s;
+    background-color: linear-gradient(45deg, rgba(147, 165, 207, 1) 0%, rgba(228, 239, 233, 1) 100%);
   }
-
-@keyframes navv{
-    0%{background: transparent}
-    }
-    
     
   #mainNav .navbar-brand {
     color: #153939;
@@ -197,10 +188,8 @@ header.masthead {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
   overflow: hidden;
+    position: relative;
 }
 
 header.masthead hr {
@@ -316,19 +305,29 @@ header.masthead p {
 .text-primary {
   color: #00514a !important;
 }
+
 .ff{
+    display: block;
+    margin: 30vh 0;
     padding: 20px;
     text-shadow: 2px 2px 1px rgba(9, 0, 46, 0.4);
     color: aliceblue;
     font-size: 50px;
     letter-spacing: 3px;
     font-weight: 500;
-    position: absolute;
+    position: flex;
     align-items:center;
     justify-content: center;
-    top: 40%;
     animation: ff 5s ;
+    animation: todown 1s linear;
 }
+.ff span{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin: 0 0 20px 0;
+}
+
 @keyframes ff{
     0%{color:rgba(40, 53, 74, 0.87)}
     50%{color:rgba(213, 255, 242, 0.87)}
@@ -341,6 +340,7 @@ header.masthead p {
     bottom: 0px;
     height: 1000px;
     border-left: solid 50px #00514a;
+    border-radius: 15px 15px 0 0;
     animation:  ddline 1s;
     animation-fill-mode: forwards;
 }
@@ -356,6 +356,7 @@ header.masthead p {
     bottom: 0px;
     height: 1000px;
     border-left: solid 10px #56acac;
+    border-radius: 15px 15px 0 0;
     animation-delay: 1.5s;
     animation:  ddline 2s;
     animation-fill-mode: forwards;
@@ -366,6 +367,7 @@ header.masthead p {
     bottom: 0px;
     height: 1000px;
     border-left: solid 10px rgba(166, 255, 134, 0.78);
+    border-radius: 15px 15px 0 0;
     animation-delay: 1s;
     animation:  ddline 1.5s;
     animation-fill-mode: forwards;
@@ -376,6 +378,7 @@ header.masthead p {
     bottom: 0px;
     height: 1000px;
     border-left: solid 20px rgba(19, 203, 125, 0.68);
+    border-radius: 15px 15px 0 0;
     animation-delay: 1.2s;
     animation:  ddline 1.3s;
     animation-fill-mode: forwards;
@@ -386,6 +389,7 @@ header.masthead p {
     bottom: 0px;
     height: 1000px;
     border-left: solid 15px #00514a;
+    border-radius: 15px 15px 0 0;
     animation-delay: 1s;
     animation:  ddline 2s;
     animation-fill-mode: forwards;
@@ -395,12 +399,13 @@ header.masthead p {
     font-weight: 400;
     font-size: 20px;
     letter-spacing: 5px;
-    margin: 0;
-    padding: 70px 20px;
-    width: 100%;
-    line-height: 60px;
+    padding: 5vh;
+    height: 150px;
+    width: 300px;
+    border-radius: 80px;
     color: #00ffe9;
     background-color: rgba(0, 33, 36, 0.83);
+    animation: todown 1s linear;
 }
 
 .btn:hover{
@@ -429,4 +434,27 @@ header.masthead p {
 
 .navbar-toggler{
     border: none;
+}
+
+nav .container{
+    -webkit-animation: todown 1s linear;
+    animation: todown 1s linear;
+}
+@keyframes todown {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    10% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(0);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
