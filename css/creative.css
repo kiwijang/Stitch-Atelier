@@ -10,8 +10,8 @@ body {
 
 hr {
   max-width: 30%;
-  border-width: 3px;
-  border-color: rgba(70, 78, 78, 0.68);
+  border-width: 1px;
+  border-color: #6f6f3d;
 }
 
 a {
@@ -34,6 +34,7 @@ h4,
 h5,
 h6 {
   font-family: 微軟正黑體, sans-serif;
+    color: #696100;
     font-weight: 700;
     letter-spacing: 3px;
 }
@@ -90,8 +91,8 @@ img::-moz-selection {
 }
 
 #mainNav {
-  border-bottom: 1px solid rgba(224, 255, 255, 0.33);
-  background-color: linear-gradient(45deg, rgba(147, 165, 207, 1) 0%, rgba(228, 239, 233, 1) 100%);
+  border-bottom: 1px solid rgba(142, 142, 142, 0.33);
+  background-color: rgb(237, 237, 237);
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
@@ -110,7 +111,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #00514a;
+  color: #008698;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link,
@@ -124,12 +125,12 @@ img::-moz-selection {
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-  color: #00514a;
+  color: #004f5a;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
-  color: #90fff5 !important;
+  color: #00b3ba !important;
   background-color: transparent;
 }
 
@@ -249,10 +250,13 @@ header.masthead p {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(97, 226, 221, 0.9);
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  transition: all 0.2s;
+    -webkit-box-shadow: inset 0px 0px 300px -39px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 300px -39px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 300px -39px rgba(0,0,0,0.75);
+  background: rgba(5, 119, 115, 0.9);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
@@ -303,7 +307,7 @@ header.masthead p {
 }
 
 .text-primary {
-  color: #00514a !important;
+  color: #34b589 !important;
 }
 
 .ff{
@@ -403,8 +407,8 @@ header.masthead p {
     height: 150px;
     width: 300px;
     border-radius: 80px;
-    color: #00ffe9;
-    background-color: rgba(0, 33, 36, 0.83);
+    color: #aaa677;
+    background-color: rgba(42, 62, 54, 0.83);
     animation: todown 1s linear;
 }
 .btn:focus,.btn:active{
@@ -412,8 +416,8 @@ header.masthead p {
     box-shadow: none;
 }
 .btn:hover{
-    color: #ffffff;
-    background-color: rgba(0, 8, 21, 0.89);
+    color: #d6cf7a;
+    background-color: rgba(64, 77, 72, 0.89);
 }
 
 .btn2 {
@@ -426,13 +430,13 @@ header.masthead p {
     width: 100%;
     border-radius: 50px;
     line-height: 60px;
-    color: rgba(0, 33, 36, 0.83);
-    background-color: rgba(221, 252, 255, 0.83);
+    color: rgb(173, 209, 183);
+    background-color: rgb(82, 105, 96);
 }
 
 .btn2:hover{
-    color: rgba(252, 252, 252, 0.95);
-    background-color: rgba(0, 185, 178, 0.89);
+    color: rgba(155, 140, 8, 0.95);
+    background-color: rgb(76, 221, 148);
 }
 
 .navbar-toggler{
@@ -441,7 +445,7 @@ header.masthead p {
 
 nav .container{
     -webkit-animation: todown 1s linear;
-    animation: todown 1s linear;
+    animation: todown 5s linear;
 }
 @keyframes todown {
     0% {
